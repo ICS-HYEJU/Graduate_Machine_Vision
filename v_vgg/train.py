@@ -10,3 +10,4 @@ if __name__ == '__main__':
 
     # Star train
     trainer.start_train()
+
