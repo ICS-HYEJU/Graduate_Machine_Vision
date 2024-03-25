@@ -25,7 +25,7 @@ class Trainer():
         # ===== Model =====
         self.model = self.build_model()
 
-        # ===== Optimiaer =====
+        # ===== Optimizer =====
         self.optimizer = self.build_optimizer()
 
         # ===== Scheduler =====
@@ -34,7 +34,7 @@ class Trainer():
         self.criterion = self.set_criterion()
 
         # ===== Parameters =====
-        self.max_epoch = self.cfg['solver']['save_base_path']
+        self.max_epoch = self.cfg['solver']['max_epoch']
         self.max_stepnum = len(self.train_loader)
 
     def calc_loss(self, logits, labels):
